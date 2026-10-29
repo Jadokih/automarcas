@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0B0B0D" />
+    <title>Catálogo de Veículos — Automarcas Itaúna</title>
+    <meta
+      name="description"
+      content="Confira o catálogo de veículos disponíveis na Automarcas Itaúna. Sedãs e SUVs selecionados com atendimento direto pelo WhatsApp."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Automarcas Itaúna" />
+    <meta property="og:title" content="Catálogo de Veículos — Automarcas Itaúna" />
+    <meta
+      property="og:description"
+      content="Confira o catálogo de veículos disponíveis na Automarcas Itaúna. Sedãs e SUVs selecionados com atendimento direto pelo WhatsApp."
+    />
+    <meta property="og:image" content="logo.jpg" />
+
+    <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="initial-loader" class="initial-loader" aria-label="Carregando Automarcas Itaúna">
+      <img
+        src="logo.jpg"
+        alt="Automarcas Itaúna — Veículos Novos e Seminovos"
+        class="initial-loader__logo"
+        width="148"
+        height="148"
+      />
+      <div class="initial-loader__bar" aria-hidden="true"></div>
+    </div>
+
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Cabeçalho -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="brand-logo" aria-label="Automarcas Itaúna — Ir para a página inicial">
+          <img src="logo.jpg" alt="Logo Automarcas Veículos" class="brand-logo__img" width="108" height="108" />
+          <div class="brand-logo__text">
+            <span class="brand-logo__title">Automarcas</span>
+            <span class="brand-logo__location">Itaúna • MG</span>
+          </div>
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="index.html" class="site-nav__link">Início</a>
+          <a href="catalogo.html" class="site-nav__link" aria-current="page">Catálogo</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a
+            href="https://wa.me/553799880061?text=Ol%C3%A1%2C%20Alan!%20Conheci%20a%20Automarcas%20Ita%C3%BAna%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20ve%C3%ADculos%20dispon%C3%ADveis."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary btn--sm site-header__cta-desktop"
+          >
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 9.5c.3 1.8 1.7 3.2 3.5 3.5l1.2-.8c.2-.2.5-.2.8-.1l1.6.7c.3.1.4.4.4.7-.1 1-.9 1.6-1.9 1.6-3.6 0-6.6-3-6.6-6.6 0-1 .6-1.8 1.6-1.9.3 0 .6.1.7.4l.7 1.6c.1.3.1.6-.1.8l-.9 1.1z"/></svg>
+            <span>Falar com consultor</span>
+          </a>
+
+          <a
+            href="https://wa.me/553799880061?text=Ol%C3%A1%2C%20Alan!%20Conheci%20a%20Automarcas%20Ita%C3%BAna%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20ve%C3%ADculos%20dispon%C3%ADveis."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--primary btn--sm site-header__cta-mobile"
+            aria-label="Falar com consultor Alan pelo WhatsApp"
+          >
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 9.5c.3 1.8 1.7 3.2 3.5 3.5l1.2-.8c.2-.2.5-.2.8-.1l1.6.7c.3.1.4.4.4.7-.1 1-.9 1.6-1.9 1.6-3.6 0-6.6-3-6.6-6.6 0-1 .6-1.8 1.6-1.9.3 0 .6.1.7.4l.7 1.6c.1.3.1.6-.1.8l-.9 1.1z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <button
+            type="button"
+            class="menu-toggle"
+            id="mobile-menu-btn"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+            aria-label="Abrir menu de navegação"
+          >
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="7" y2="7"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="17" y2="17"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-drawer" class="mobile-drawer" aria-label="Menu móvel">
+        <div class="mobile-drawer__list">
+          <a href="index.html" class="mobile-drawer__link">
+            <span>Início</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="catalogo.html" class="mobile-drawer__link" aria-current="page">
+            <span>Catálogo de veículos</span>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+        <a
+          href="https://wa.me/553799880061?text=Ol%C3%A1%2C%20Alan!%20Conheci%20a%20Automarcas%20Ita%C3%BAna%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20ve%C3%ADculos%20dispon%C3%ADveis."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn--dark btn--full"
+        >
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 9.5c.3 1.8 1.7 3.2 3.5 3.5l1.2-.8c.2-.2.5-.2.8-.1l1.6.7c.3.1.4.4.4.7-.1 1-.9 1.6-1.9 1.6-3.6 0-6.6-3-6.6-6.6 0-1 .6-1.8 1.6-1.9.3 0 .6.1.7.4l.7 1.6c.1.3.1.6-.1.8l-.9 1.1z"/></svg>
+          <span>Falar com consultor Alan</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="catalog-hero dark-surface" aria-labelledby="catalog-title">
+        <div class="container">
+          <h1 id="catalog-title" class="catalog-hero__title">Encontre seu próximo carro</h1>
+          <p class="catalog-hero__subtitle">
+            Explore os veículos disponíveis na Automarcas Itaúna, filtre por marca ou categoria e fale diretamente com o consultor Alan.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <div class="catalog-controls" role="search" aria-label="Filtros do catálogo de veículos">
+            <div class="catalog-controls__top">
+              <div class="field-group">
+                <label for="catalog-search-input" class="field-label">Buscar por marca, modelo ou versão</label>
+                <div class="search-input-wrap">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                  <input
+                    type="search"
+                    id="catalog-search-input"
+                    class="input-control input-control--search"
+                    placeholder="Ex.: Corolla, Creta, Híbrido, Turbo..."
+                    value=""
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="catalog-brand-select" class="field-label">Marca</label>
+                <select id="catalog-brand-select" class="select-control">
+                  <option value="all" selected>Todas as marcas</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Hyundai">Hyundai</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="catalog-sort-select" class="field-label">Ordenar por</label>
+                <select id="catalog-sort-select" class="select-control">
+                  <option value="relevance" selected>Relevância</option>
+                  <option value="mileage-asc">Menor quilometragem</option>
+                  <option value="year-desc">Ano mais recente</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="filter-pills-row" role="group" aria-label="Filtrar por categoria">
+              <span class="filter-pills-label">Categoria:</span>
+              <button type="button" class="filter-chip" data-category-chip="all" aria-pressed="true">Todas</button>
+              <button type="button" class="filter-chip" data-category-chip="Sedã" aria-pressed="false">Sedã</button>
+              <button type="button" class="filter-chip" data-category-chip="SUV" aria-pressed="false">SUV</button>
+            </div>
+          </div>
+
+          <div id="catalog-results-region">
+            <div class="catalog-toolbar">
+              <div>
+                <h2 class="catalog-results-heading">Veículos no estoque</h2>
+                <p class="catalog-count tabular-nums" role="status" aria-live="polite">2 veículos encontrados</p>
+              </div>
+            </div>
+
+            <div class="vehicles-grid">
+              <!-- Card 1: Toyota Corolla -->
+              <div class="vehicle-card-wrap">
+                <article class="vehicle-card">
+                  <div class="vehicle-card__media">
+                    <a
+                      href="veiculo.html?slug=toyota-corolla-altis-hybrid-premium-2024"
+                      class="vehicle-card__img-link"
+                      aria-label="Ver detalhes de Toyota Corolla Altis Hybrid Premium"
+                    >
+                      <img
+                        src="catalogo/carro1/Captura%20de%20tela%202026-10-29%20132844.png"
+                        alt="Toyota Corolla Altis Hybrid Premium 2024 preto visto de frente em ângulo três quartos"
+                        class="vehicle-card__img"
+                        width="598"
+                        height="681"
+                      />
+                    </a>
+                  </div>
+                  <div class="vehicle-card__body">
+                    <div class="vehicle-card__header">
+                      <div class="vehicle-card__badges">
+                        <span class="badge badge--dark">Sedã</span>
+                        <span class="badge badge--orange tabular-nums">2024</span>
+                      </div>
+                      <h3 class="vehicle-card__title">
+                        <a href="veiculo.html?slug=toyota-corolla-altis-hybrid-premium-2024">Toyota Corolla</a>
+                      </h3>
+                      <p class="vehicle-card__version">Altis Hybrid Premium 1.8 Flex</p>
+                    </div>
+                    <div class="vehicle-card__specs" aria-label="Especificações principais">
+                      <span class="spec-pill tabular-nums">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                        <span>2024</span>
+                      </span>
+                      <span class="spec-pill tabular-nums">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                        <span>12.000 km</span>
+                      </span>
+                      <span class="spec-pill">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        <span>1.8 Híbrido Flex • 122 cv</span>
+                      </span>
+                    </div>
+                    <div class="vehicle-card__actions">
+                      <a href="veiculo.html?slug=toyota-corolla-altis-hybrid-premium-2024" class="btn btn--outline btn--sm">
+                        <span>Ver detalhes</span>
+                      </a>
+                      <a
+                        href="https://wa.me/553799880061?text=Ol%C3%A1%2C%20Alan!%20Vi%20o%20Toyota%20Corolla%20Altis%20Hybrid%20Premium%20no%20cat%C3%A1logo%20da%20Automarcas%20Ita%C3%BAna%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20esse%20ve%C3%ADculo.%20Ele%20ainda%20est%C3%A1%20dispon%C3%ADvel%3F"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn--primary btn--sm"
+                      >
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 9.5c.3 1.8 1.7 3.2 3.5 3.5l1.2-.8c.2-.2.5-.2.8-.1l1.6.7c.3.1.4.4.4.7-.1 1-.9 1.6-1.9 1.6-3.6 0-6.6-3-6.6-6.6 0-1 .6-1.8 1.6-1.9.3 0 .6.1.7.4l.7 1.6c.1.3.1.6-.1.8l-.9 1.1z"/></svg>
+                        <span>Consultar pelo WhatsApp</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!-- Card 2: Hyundai Creta -->
+              <div class="vehicle-card-wrap">
+                <article class="vehicle-card">
+                  <div class="vehicle-card__media">
+                    <a
+                      href="veiculo.html?slug=hyundai-creta-comfort-1-0-turbo-2024-2025"
+                      class="vehicle-card__img-link"
+                      aria-label="Ver detalhes de Hyundai Creta Comfort 1.0 Turbo"
+                    >
+                      <img
+                        src="catalogo/carro2/Captura%20de%20tela%202026-10-29%20133042.png"
+                        alt="Hyundai Creta Comfort 1.0 Turbo 2024/2025 cinza visto em ângulo dianteiro três quartos"
+                        class="vehicle-card__img"
+                        width="587"
+                        height="697"
+                      />
+                    </a>
+                  </div>
+                  <div class="vehicle-card__body">
+                    <div class="vehicle-card__header">
+                      <div class="vehicle-card__badges">
+                        <span class="badge badge--dark">SUV</span>
+                        <span class="badge badge--orange tabular-nums">2024/2025</span>
+                      </div>
+                      <h3 class="vehicle-card__title">
+                        <a href="veiculo.html?slug=hyundai-creta-comfort-1-0-turbo-2024-2025">Hyundai Creta</a>
+                      </h3>
+                      <p class="vehicle-card__version">Comfort 1.0 Turbo Automático</p>
+                    </div>
+                    <div class="vehicle-card__specs" aria-label="Especificações principais">
+                      <span class="spec-pill tabular-nums">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                        <span>2024/2025</span>
+                      </span>
+                      <span class="spec-pill tabular-nums">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                        <span>26.000 km</span>
+                      </span>
+                      <span class="spec-pill">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        <span>1.0 Turbo Flex • 120 cv</span>
+                      </span>
+                    </div>
+                    <div class="vehicle-card__actions">
+                      <a href="veiculo.html?slug=hyundai-creta-comfort-1-0-turbo-2024-2025" class="btn btn--outline btn--sm">
+                        <span>Ver detalhes</span>
+                      </a>
+                      <a
+                        href="https://wa.me/553799880061?text=Ol%C3%A1%2C%20Alan!%20Vi%20o%20Hyundai%20Creta%20Comfort%201.0%20Turbo%20no%20cat%C3%A1logo%20da%20Automarcas%20Ita%C3%BAna%20e%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20esse%20ve%C3%ADculo.%20Ele%20ainda%20est%C3%A1%20dispon%C3%ADvel%3F"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn--primary btn--sm"
+                      >
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 9.5c.3 1.8 1.7 3.2 3.5 3.5l1.2-.8c.2-.2.5-.2.8-.1l1.6.7c.3.1.4.4.4.7-.1 1-.9 1.6-1.9 1.6-3.6 0-6.6-3-6.6-6.6 0-1 .6-1.8 1.6-1.9.3 0 .6.1.7.4l.7 1.6c.1.3.1.6-.1.8l-.9 1.1z"/></svg>
+                        <span>Consultar pelo WhatsApp</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer dark-surface">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div class="site-footer__brand">
+            <a href="index.html" class="footer-logo-badge" aria-label="Automarcas Itaúna — Início">
+              <img src="logo.jpg" alt="Logo Automarcas Itaúna" width="168" height="168" loading="lazy" />
+            </a>
+            <p class="site-footer__specialty">
+              Automarcas Itaúna — Loja especializada em compra e venda de veículos novos e seminovos.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="site-footer__col-title">Navegação</h3>
+            <ul class="site-footer__links">
+              <li><a href="index.html" class="site-footer__link">Início</a></li>
+              <li><a href="catalogo.html" class="site-footer__link">Catálogo de veículos</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="site-footer__col-title">Endereço e Atendimento</h3>
+            <address class="site-footer__address">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Avenida Silva Jardim, 653, Itaúna</span>
+            </address>
+            <a
+              href="https://wa.me/553799880061?text=Ol%C3%A1%2C%20Alan!%20Conheci%20a%20Automarcas%20Ita%C3%BAna%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20ve%C3%ADculos%20dispon%C3%ADveis."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--primary btn--full"
+            >
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 9.5c.3 1.8 1.7 3.2 3.5 3.5l1.2-.8c.2-.2.5-.2.8-.1l1.6.7c.3.1.4.4.4.7-.1 1-.9 1.6-1.9 1.6-3.6 0-6.6-3-6.6-6.6 0-1 .6-1.8 1.6-1.9.3 0 .6.1.7.4l.7 1.6c.1.3.1.6-.1.8l-.9 1.1z"/></svg>
+              <span>Falar com Alan no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <span>© 2026 Automarcas Itaúna. Compra e venda de veículos novos e seminovos.</span>
+          <span>Avenida Silva Jardim, 653, Itaúna</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
